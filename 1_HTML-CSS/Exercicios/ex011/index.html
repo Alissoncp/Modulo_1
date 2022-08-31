@@ -1,0 +1,31 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTMML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p>Tente abrir esta imagem em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador
+    </p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+            <img src="Imagens/foto-g.png" alt="Imagem flexível">
+        </picture>
+
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em html5.</p>
+        <audio src="midia/Um_Vaso_Novo.mp3" controls></audio>
+
+        <h1>Outra tag para audio</h1>
+        <p>Agora vamos ver uma maneira mais completa para adicionar áudio</p>
+        <audio preload="metadata" controls loop>
+            <source src="midia/Um_Vaso_Novo.mp3" type="audio/mpeg">
+            <source src="midia/umVAsoNovo.ogg" type="audio/ogg">
+            <source src="midia/umvasonovo.wav" type="audio/wav">
+        </audio>
+
+</body>
+</html>
